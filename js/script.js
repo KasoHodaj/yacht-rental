@@ -69,6 +69,14 @@ if (fullGalleryBtn && extraGallery) {
     e.preventDefault();
     extraGallery.classList.add('open');
     extraGallery.setAttribute('aria-hidden', 'false');
-    fullGalleryBtn.style.display = 'none';
+    fullGalleryBtn.remove();
+
+    const navBar = document.getElementById('navbar');
+    const navOffset = navBar ? navBar.offsetHeight + 10 : 80;
+
+    requestAnimationFrame(() => {
+      const targetTop = extraGallery.getBoundingClientRect().top + window.scrollY - navOffset;
+      window.scrollTo({ top: Math.max(targetTop, 0), behavior: 'smooth' });
+    });
   });
 }
