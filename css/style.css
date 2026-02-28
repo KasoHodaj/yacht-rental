@@ -1960,11 +1960,23 @@ section {
 }
 .gallery-grid-extra.open {
   display: grid;
-  margin-top: -9rem !important;
+  margin-top: 0 !important;
 }
 .gallery-grid-extra .g-item:first-child {
   grid-row: auto;
   grid-column: auto;
+}
+
+@media (min-width: 769px) {
+  .gallery-grid-extra.open {
+    margin-top: 0.6rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-grid-extra.open {
+    margin-top: -9rem !important;
+  }
 }
 
 /* ═══════════════════════════════════════════
