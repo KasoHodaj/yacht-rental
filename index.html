@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Yacht, Paxos - Greece</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Scroll progress -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" onclick="closeMobile()">Home</a>
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#gallery" onclick="closeMobile()">Gallery</a>
+
+  <a href="#booking" onclick="closeMobile()">Contact</a>
+  <div class="mobile-menu-cta">
+    <a href="#booking" onclick="closeMobile()" class="btn btn-gold">Book Now</a>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#home" class="logo">
+    <svg class="logo-icon" viewBox="0 0 28 28">
+      <path d="M14 4 L14 22 M4 16 C4 16 9 10 14 10 C19 10 24 16 24 16" stroke-linecap="round"/>
+      <path d="M7 22 L21 22" stroke-linecap="round"/>
+    </svg>
+    Paxos<span>Yacht</span>
+  </a>
+  <ul class="nav-links nav-links-desktop">
+    <li><a href="#about">About</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#booking" class="nav-cta">Book Now</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMobile()" aria-label="Menu" aria-controls="mobileMenu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!--HERO-->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <span class="hero-eyebrow">Paxos &amp; Antipaxos, Ionian Sea</span>
+    <h1 class="hero-title">
+      Experience the<br>Ionian Sea<br><em>in Pure Luxury.</em>
+    </h1>
+    <p class="hero-sub">Unforgettable daily cruises around Paxos and Antipaxos, where crystal waters meet timeless elegance.</p>
+    <div class="hero-btns">
+      <a href="#booking" class="btn btn-gold">Make a Reservation</a>
+      <a href="#about" class="btn btn-outline-white">Discover More</a>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span class="scroll-hint-label">Scroll</span>
+    <div class="scroll-line-wrap">
+      <div class="scroll-line-inner"></div>
+    </div>
+  </div>
+  <div class="wave-wrap">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" fill="white">
+      <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,10 1440,40 L1440,80 L0,80 Z"/>
+    </svg>
+  </div>
+</section>
+
+<!--ABOUT-->
+<section class="about-section" id="about">
+  <div class="about-inner">
+    <div class="about-image-wrap reveal">
+      <img
+        src="https://images.unsplash.com/photo-1605281317010-fe5ffe798166?w=900&auto=format&fit=crop&q=80"
+        alt="Luxury yacht interior and sundeck"
+        loading="lazy"
+      >
+      <div class="about-badge">
+        <span class="about-badge-num">12+</span>
+        <span class="about-badge-label">Years of Excellence</span>
+      </div>
+    </div>
+    <div class="about-text reveal reveal-delay-1">
+      <span class="eyebrow">About the Vessel</span>
+      <h2 class="section-title">Where Elegance Meets<br><em>the Open Sea</em></h2>
+      <p>Our state-of-the-art luxury yacht is meticulously crafted for those who seek the finest experience on the water. With a professionally trained crew, premium sundecks, and world-class amenities, every charter promises comfort, privacy, and breathtaking views of the Ionian archipelago.</p>
+      <p>We navigate routes most visitors never discover — hidden caves, secret coves, and the impossibly turquoise waters between Paxos and Antipaxos.</p>
+      <div class="feature-pills">
+        <span class="pill">
+          <svg viewBox="0 0 24 24"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/></svg>
+          Premium Comfort
+        </span>
+        <span class="pill">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0 1 12 0v2"/></svg>
+          Expert Crew
+        </span>
+        <span class="pill">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          Guided Routes
+        </span>
+      </div>
+      <div class="captain-card">
+        <div class="captain-photo" role="img" aria-label="Captain photo"></div>
+        <div class="captain-info">
+          <span class="captain-label">Meet Your Captain</span>
+          <strong>Alexandros Mitsialis — Owner &amp; Captain</strong>
+          <p>Your local expert for hidden coves, smooth sailing, and a safe premium experience across Paxos and Antipaxos.</p>
+        </div>
+      </div>
+      <a href="#booking" class="about-link">
+        Discover all amenities
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<!--GALLERY-->
+<section class="gallery-section" id="gallery">
+  <span class="eyebrow reveal">Visual Journey</span>
+  <h2 class="section-title reveal reveal-delay-1">A Glimpse of <em>Paradise</em></h2>
+  <div class="gallery-grid reveal reveal-delay-2">
+    <div class="g-item">
+      <img src="./assets/yacht.jpg" alt="Yacht exterior" loading="lazy">
+      <div class="g-overlay"><span class="g-caption">The Vessel</span></div>
+    </div>
+    <div class="g-item">
+      <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80" alt="Crystal waters" loading="lazy">
+      <div class="g-overlay"><span class="g-caption">Crystal Waters</span></div>
+    </div>
+    <div class="g-item">
+      <img src="https://images.unsplash.com/photo-1530053969600-caed2596d242?w=600&auto=format&fit=crop&q=80" alt="Sundeck" loading="lazy">
+      <div class="g-overlay"><span class="g-caption">Sun Deck</span></div>
+    </div>
+    <div class="g-item">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&auto=format&fit=crop&q=80" alt="Ionian coast" loading="lazy">
+      <div class="g-overlay"><span class="g-caption">Hidden Coves</span></div>
+    </div>
+    <div class="g-item">
+      <img src="https://plus.unsplash.com/premium_photo-1673274584503-1ab1edf728e3?q=80&w=1200&auto=format&fit=crop" alt="Sunset glow over calm sea" loading="lazy">
+      <div class="g-overlay"><span class="g-caption">Sunset Glow</span></div>
+    </div>
+  </div>
+  <a href="#" id="fullGalleryBtn" class="btn btn-outline-navy reveal reveal-delay-3">View Full Gallery</a>
+  <div class="gallery-grid gallery-grid-extra" id="extraGallery" aria-hidden="true">
+    <div class="g-item">
+      <img src="https://images.unsplash.com/photo-1654221383328-6c3073af12ae?q=80&w=1200&auto=format&fit=crop" alt="Blue cave with crystal water" loading="lazy">
+      <div class="g-overlay"><span class="g-caption">Azure Cave</span></div>
+    </div>
+    <div class="g-item">
+      <img src="https://images.unsplash.com/photo-1752834370483-66bf061bceef?q=80&w=1200&auto=format&fit=crop" alt="Dramatic cliffs above Erimitis beach" loading="lazy">
+      <div class="g-overlay"><span class="g-caption">Sunset Cliffs</span></div>
+    </div>
+    <div class="g-item">
+      <img src="https://images.unsplash.com/photo-1723461375986-2a9c7d8f20de?q=80&w=1200&auto=format&fit=crop" alt="Panoramic fleet on Ionian waters" loading="lazy">
+      <div class="g-overlay"><span class="g-caption">Ionian Panorama</span></div>
+    </div>
+    <div class="g-item">
+      <img src="https://images.unsplash.com/photo-1723461376078-8180c4544a55?q=80&w=1200&auto=format&fit=crop" alt="Aerial view of boats over turquoise sea" loading="lazy">
+      <div class="g-overlay"><span class="g-caption">Aerial Escape</span></div>
+    </div>
+  </div>
+</section>
+
+<!--BOOKING-->
+<section class="booking-section" id="booking">
+  <div class="booking-deco"></div>
+  <span class="eyebrow reveal">Reserve Your Voyage</span>
+  <h2 class="section-title light reveal reveal-delay-1">Ready to <em>Set Sail?</em></h2>
+  <p class="booking-sub reveal reveal-delay-2">Contact us via your preferred app to reserve your spot! We respond quickly to all inquiries.</p>
+  <div class="booking-buttons reveal reveal-delay-3">
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/306980862785" class="book-btn wa" target="_blank" rel="noopener">
+      <svg class="book-btn-icon" viewBox="0 0 24 24" fill="white">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      <span class="book-btn-text">
+        <span class="book-btn-name">WhatsApp</span>
+        <span class="book-btn-sub">Message us now</span>
+      </span>
+    </a>
+
+    <!-- Call -->
+    <a href="tel:+306980862785" class="book-btn call">
+      <svg class="book-btn-icon" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+        <path d="M6.62 10.79a15.46 15.46 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 3a1 1 0 011-1h3.49a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.02z"/>
+      </svg>
+      <span class="book-btn-text">
+        <span class="book-btn-name">Phone Call</span>
+        <span class="book-btn-sub">+30 698 086 2785</span>
+      </span>
+    </a>
+
+    <!-- Viber -->
+    <a href="viber://chat?number=306980862785" class="book-btn vb">
+      <svg class="book-btn-icon" viewBox="0 0 24 24" fill="white">
+        <path d="M11.398.002C9.473.028 5.331.344 3.014 2.467 1.294 4.177.693 6.698.623 9.82c-.067 3.12-.15 8.97 5.49 10.565h.005l-.005 2.42s-.037.995.619 1.197c.79.247 1.254-.507 2.01-1.315.414-.448.985-1.105 1.416-1.601 3.898.327 6.893-.42 7.232-.53.787-.254 5.237-.826 5.96-6.738.746-6.09-.361-9.934-2.931-11.666 0 0-.71-.463-2.162-.71-.504-.088-1.193-.168-1.863-.168A13.5 13.5 0 0011.4 0zm-.08 1.57a11.97 11.97 0 011.116-.052 9.92 9.92 0 011.53.135c1.177.211 1.714.564 1.714.564 2.169 1.48 3.053 4.93 2.416 10.07-.62 5.067-4.3 5.406-4.956 5.617-.287.092-3.024.741-6.455.51 0 0-2.559 3.084-3.36 3.887-.123.124-.267.172-.364.149-.135-.033-.174-.198-.172-.437l.024-3.8c-4.745-1.322-4.68-6.346-4.622-9.073.062-2.732.563-4.902 2.038-6.364 2.028-1.854 5.701-2.19 7.297-2.208zm.15 2.942c-.214 0-.387.173-.387.387v.004c0 .213.173.386.387.386 1.972.036 3.41.762 4.23 2.04.667 1.048.849 2.25.82 3.248-.006.21.164.388.374.394h.012c.208 0 .38-.168.386-.377.033-1.141-.175-2.543-.957-3.76-.978-1.534-2.69-2.378-4.865-2.321z"/>
+      </svg>
+      <span class="book-btn-text">
+        <span class="book-btn-name">Viber</span>
+        <span class="book-btn-sub">Chat on Viber</span>
+      </span>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/alexandrosmitsialis/" class="book-btn ig" target="_blank" rel="noopener">
+      <svg class="book-btn-icon" viewBox="0 0 24 24" fill="white">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+      </svg>
+      <span class="book-btn-text">
+        <span class="book-btn-name">Instagram</span>
+        <span class="book-btn-sub">DM us on Instagram</span>
+      </span>
+    </a>
+  </div>
+
+  <div class="reveal reveal-delay-3 booking-location-wrap">
+    <div class="location-badge">
+      <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke-linecap="round"/><circle cx="12" cy="9" r="2.5"/></svg>
+      <span><strong>Gaios Port, Paxos, Greece</strong> </span>
+    </div>
+  </div>
+</section>
+
+<!--TESTIMONIALS (TODO)-->
+<!-- <section class="testimonials-section" id="testimonials">
+  <span class="eyebrow reveal">Guest Stories</span>
+  <h2 class="section-title light reveal reveal-delay-1">Words from the <em>Open Sea</em></h2>
+  <div class="testi-grid">
+    <div class="testi-card reveal reveal-delay-1">
+      <div class="testi-stars"></div>
+    </div>
+    <div class="testi-card reveal reveal-delay-2">
+      <div class="testi-stars"></div>
+    </div>
+  </div>
+</section> -->
+
+<!--FOOTER-->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">
+        <svg width="20" height="20" viewBox="0 0 28 28" fill="none" stroke="rgba(201,169,110,0.7)" stroke-width="1.5">
+          <path d="M14 4 L14 22 M4 16 C4 16 9 10 14 10 C19 10 24 16 24 16" stroke-linecap="round"/>
+          <path d="M7 22 L21 22" stroke-linecap="round"/>
+        </svg>
+        Paxos<span>Yacht</span>
+      </div>
+      <p class="footer-desc">Luxury daily yacht charters in the crystal waters of the Ionian Sea. Based in Paxos, Greece. Available May–October.</p>
+      <div class="newsletter-row">
+        <input type="email" class="newsletter-input" placeholder="Your email address" disabled aria-disabled="true">
+        <button class="newsletter-btn" type="button" disabled aria-disabled="true">Coming Soon</button>
+      </div>
+      <p class="newsletter-note">Email updates will be available soon.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#booking">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Follow Us</div>
+      <p class="footer-desc">Stay connected for behind-the-scenes moments and exclusive deals.</p>
+      <div class="social-row">
+        <a href="https://www.instagram.com/alexandrosmitsialis/" class="social-ico" title="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="#" class="social-ico is-disabled" title="Facebook (Coming Soon)" aria-disabled="true" tabindex="-1">
+          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="#" class="social-ico is-disabled" title="TikTok (Coming Soon)" aria-disabled="true" tabindex="-1">
+          <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.75a8.27 8.27 0 004.84 1.55V6.84a4.85 4.85 0 01-1.07-.15z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 PaxosYacht Rentals. All rights reserved.</span>
+    <span>Paxos, Ionian Islands, Greece</span>
+  </div>
+</footer>
+<!-- Scripts -->
+<script src="js/script.js" defer></script>
+</body>
+</html>
