@@ -1960,7 +1960,7 @@ section {
 }
 .gallery-grid-extra.open {
   display: grid;
-  margin-top: 0 !important;
+  margin-top: -9rem !important;
 }
 .gallery-grid-extra .g-item:first-child {
   grid-row: auto;
